@@ -35,10 +35,10 @@ export class TodoList extends BaseComponent {
 
 	render() {
 		if (this.filteredList.length === 0) {
-			this.shadowRoot.innerHTML = `<span>${this.emptyText}</span>`;
+			this.innerHTML = `<span>${this.emptyText}</span>`;
 		} else {
-			this.shadowRoot.innerHTML = `
-				<ul>
+			this.innerHTML = `
+				<ul class="todo-filter">
 					${this.filteredList
 						.map(
 							(item) =>

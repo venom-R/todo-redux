@@ -25,11 +25,11 @@ export class TodoItem extends BaseComponent {
 	}
 
 	get toggleElement() {
-		return this.shadowRoot.querySelector("[name=isCompleted]");
+		return this.querySelector("[name=isCompleted]");
 	}
 
 	get removeButton() {
-		return this.shadowRoot.querySelector("[name=remove]");
+		return this.querySelector("[name=remove]");
 	}
 
 	onToggleComplete() {
@@ -49,10 +49,12 @@ export class TodoItem extends BaseComponent {
 	}
 
 	render() {
-		this.shadowRoot.innerHTML = `
+		this.innerHTML = `
 			<li style="${this.itemStyle}">
-				<input type="checkbox" name="isCompleted" ${this.isCompeted ? "checked" : ""}>
-				${this.text}
+				<label>
+					<input type="checkbox" name="isCompleted" ${this.isCompeted ? "checked" : ""}>
+					${this.text}
+				</label>
 				<button name="remove">&#10005;</button>
 			</li>
 		`;

@@ -8,7 +8,7 @@ export class TodoSearch extends BaseComponent {
 	}
 
 	get searchElement() {
-		return this.shadowRoot.querySelector("input[type=search]");
+		return this.querySelector("input[type=search]");
 	}
 
 	onInputSearchValue(event) {
@@ -21,7 +21,7 @@ export class TodoSearch extends BaseComponent {
 	}
 
 	render() {
-		this.shadowRoot.innerHTML = `
+		this.innerHTML = `
             <form>
                   <label>
                         <span>Search task</span>

@@ -8,7 +8,7 @@ export class TodoAddForm extends BaseComponent {
 	}
 
 	get form() {
-		return this.shadowRoot.firstElementChild;
+		return this.firstElementChild;
 	}
 
 	onCreateTask(event) {
@@ -26,7 +26,7 @@ export class TodoAddForm extends BaseComponent {
 	}
 
 	render() {
-		this.shadowRoot.innerHTML = `
+		this.innerHTML = `
             <form>
                   <label>
                         <span>Enter new task</span>

@@ -9,7 +9,7 @@ export class TodoFilter extends BaseComponent {
 	}
 
 	get radioElements() {
-		return this.shadowRoot.querySelectorAll("input[type=radio]");
+		return this.querySelectorAll("input[type=radio]");
 	}
 
 	disconnectedCallback() {
@@ -45,8 +45,8 @@ export class TodoFilter extends BaseComponent {
 	}
 
 	render() {
-		this.shadowRoot.innerHTML = `
-            <ul>
+		this.innerHTML = `
+            <ul class="todo-filter">
               <li>
                 ${this.renderFilterItem("All", TODO_FILTER.ALL, true)}
               </li>

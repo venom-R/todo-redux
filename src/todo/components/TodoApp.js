@@ -4,16 +4,18 @@ import { TodoList } from "./TodoList";
 import { TodoSearch } from "./TodoSearch";
 import { TodoAddForm } from "./TodoAddForm";
 import { TodoFilter } from "./TodoFilter";
+import "../todo.css";
 
 export class TodoApp extends BaseComponent {
-	shadowDOM = false;
-
 	render() {
 		this.innerHTML = `
-			<div>
+			<div class="todo-app">
 				<todo-add-form></todo-add-form>
+				<hr>
 				<todo-search></todo-search>
+				<hr>
 				<todo-list></todo-list>
+				<hr>
 				<todo-filter></todo-filter>
 			</div>
 		`;
