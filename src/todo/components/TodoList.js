@@ -38,7 +38,7 @@ export class TodoList extends BaseComponent {
 			this.innerHTML = `<span>${this.emptyText}</span>`;
 		} else {
 			this.innerHTML = `
-				<ul class="todo-filter">
+				<ul class="todo-list">
 					${this.filteredList
 						.map(
 							(item) =>

@@ -50,7 +50,7 @@ export class TodoItem extends BaseComponent {
 
 	render() {
 		this.innerHTML = `
-			<li style="${this.itemStyle}">
+			<li style="${this.itemStyle}" class="todo-item">
 				<label>
 					<input type="checkbox" name="isCompleted" ${this.isCompeted ? "checked" : ""}>
 					${this.text}

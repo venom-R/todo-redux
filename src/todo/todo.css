@@ -6,11 +6,33 @@
 	border-radius: 4px;
 }
 
+.todo-list {
+	list-style: none;
+}
+
+.todo-item {
+	user-select: none;
+}
+
+.todo-item button {
+	margin-left: 5px;
+	background: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 50%;
+	border: none;
+}
+
+.todo-item button:hover {
+	color: blue;
+}
+
 .todo-filter {
 	display: flex;
 	justify-content: center;
 	list-style: none;
 	padding: 0;
+	user-select: none;
 }
 
 .todo-filter li + li {

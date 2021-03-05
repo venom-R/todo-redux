@@ -10,7 +10,7 @@ export const todoSlice = createSlice({
 	},
 	reducers: {
 		addTodoItem: (state, { payload }) => {
-			state.list.push({
+			state.list.unshift({
 				id: new Date().getTime(),
 				text: payload.text,
 				isCompleted: false,
