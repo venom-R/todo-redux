@@ -8,10 +8,12 @@
 
 .todo-list {
 	list-style: none;
+	padding: 0;
 }
 
 .todo-item {
 	user-select: none;
+	padding: 5px 0;
 }
 
 .todo-item button {
@@ -21,10 +23,11 @@
 	font-weight: bold;
 	border-radius: 50%;
 	border: none;
+	color: red;
 }
 
 .todo-item button:hover {
-	color: blue;
+	color: darkred;
 }
 
 .todo-filter {
