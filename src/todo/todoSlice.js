@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { TODO_FILTER } from "./todo-constants";
+import { TODO_MOCK_ITEMS } from "./todo-mock-items";
 
 export const todoSlice = createSlice({
 	name: "todo",
 	initialState: {
-		list: [],
+		list: [...TODO_MOCK_ITEMS],
 		filter: TODO_FILTER.ALL,
 		searchValue: "",
 	},
